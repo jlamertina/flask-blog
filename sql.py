@@ -17,5 +17,4 @@ with sqlite3.connect("blog.db") as myConnection:
     c.execute("DROP TABLE IF EXISTS posts")
     c.execute("CREATE TABLE posts(title TEXT, post TEXT)")
     c.executemany("INSERT INTO posts VALUES(?,?)", blog_data)
-    myConnection.commit()
-    
+    myConnection.commit() 

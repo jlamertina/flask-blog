@@ -2,11 +2,18 @@
 <html>
 	<head>
 		<title>Welcome, SFU friends!</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/johnL.css') }}">
 	</head>
 	<body>
-		<div class="container">
-			{% block content %}
-			{% endblock %}
+		<div id="wrapper">
+			<header>
+				<h1>Flask App - Chapter 7</h1>
+			</header>
+			<div class="container">
+				{% block content %}
+				{% endblock %}
+			</div>
+			<footer> Fall 2015 - John Lamertina </footer>
 		</div>
 	</body>
 </html>
