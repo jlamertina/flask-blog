@@ -10,6 +10,13 @@
 				<h1>Flask App - Chapter 7</h1>
 			</header>
 			<div class="container">
+				{% for message in get_flashed_messages() %}
+					<div class="flash">{{ message }}</div>
+				{% endfor %}
+				{% if error %}
+					<p class="error"><strong>Error:</strong> {{ error }}</p>
+				{% endif %}
+				<!-- Placeholder for child templates: -->
 				{% block content %}
 				{% endblock %}
 			</div>

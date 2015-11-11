@@ -35,8 +35,8 @@ h2 {
 	padding: 10px; 
 }
 .flash, .error {
-	background-color: #000;
-	color: #fff;
+	background-color: #990000;
+	color: white;
 	padding: 0.5em;
 }
 footer {
